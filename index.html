@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ee9d395ada.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#apps">Mini App</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- home -->
+  <section id="home" class="container">
+    <h1 class="title">웹 퍼블리셔 <strong>김애진</strong>입니다.</h1>
+    <p class="subtitle">front-end dev</p>
+  </section>
+  <!-- about -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>웹 개발로 시작해서 풀스택 개발자가 되는게 꿈입니다.</p>
+  </section>
+  <!-- skills -->
+  <section id="skills" class="container">
+    <h2>Skill</h2>
+    <div class="programs">
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/html-nomargin.svg" alt="html5">
+        </div>
+        <div class="txt">
+          <span>HTML 5</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/css-nomargin.svg" alt="css3">
+        </div>
+        <div class="txt">
+          <span>CSS 3</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/js.svg" alt="javascript">
+        </div>
+        <div class="txt">
+          <span>JavaScript</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/jquery.svg" alt="jquery">
+        </div>
+        <div class="txt">
+          <span>jQuery</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/adobe-xd.svg" alt="xd">
+        </div>
+        <div class="txt">
+          <span>X Design</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/adobe-photoshop.svg" alt="photoshop">
+        </div>
+        <div class="txt">
+          <span>Photoshop</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/adobe-illustrator.svg" alt="illustrator">
+        </div>
+        <div class="txt">
+          <span>Illustrator</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/adobe-premiere-pro.svg" alt="premiere-pro">
+        </div>
+        <div class="txt">
+          <span>Premiere Pro</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/figma.png" alt="figma">
+        </div>
+        <div class="txt">
+          <span>Figma</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/vscode.svg" alt="vscode">
+        </div>
+        <div class="txt">
+          <span>VS Code</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/GitHub-Mark-Light-64px.png" alt="github">
+        </div>
+        <div class="txt">
+          <span>GitHub</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/git.svg" alt="git">
+        </div>
+        <div class="txt">
+          <span>Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- projects -->
+  <section id="projects" class="container">
+    <h2>Project</h2>
+    <div class="duo">
+      <div class="img">
+        <img src="images/happy-people/renewal-main-page-thumbnail.png" alt="">
+      </div>
+      <div class="txt">
+        <h3>사단법인 해피피플<span>2022.02</span></h3>
+        <p>Float, Position 위주로 제작된 레이아웃</p>
+        <button id="happy-btn">자세히 보기 ></button>
+      </div>
+    </div>
+    <div class="duo">
+      <div class="img">
+        <img src="images/mosh/renewal-main-page-thumbnail.png" alt="">
+      </div>
+      <div class="txt">
+        <h3>mosh!<span>2022.03</span></h3>
+        <p>Flexbox를 이용한 반응형 레이아웃</p>
+        <button id="mosh-btn">자세히 보기 ></button>
+      </div>
+    </div>
+    <div class="duo">
+      <div class="img">
+        <img src="images/recipes/renewal-main-page-thumbnail.png" alt="">
+      </div>
+      <div class="txt">
+        <h3>만개의 레시피<span>2022.04</span></h3>
+        <p>자바스크립을 활용한 masonry 레이아웃</p>
+        <button id="recipes-btn">자세히 보기 ></button>
+      </div>
+    </div>
+  </section>
+  <!-- apps -->
+  <section id="apps" class="container">
+    <h2>Mini App</h2>
+    <div class="cont">
+      <div class="duo">
+        <a class="app" href="https://iridescent-belekoy-d4e267.netlify.app/" target="_blank" title="새 탭에 열기">
+          <div class="img">
+            <img src="images/scrimba/blackjack.png" alt="">
+          </div>
+          <h3>카드 게임 : 블랙잭</h3>
+        </a>
+        <div class="links">
+          <a href="https://github.com/code-zeen/scrimba/tree/main/blackjack-game-app" class="github"><i
+              class="fa-brands fa-github"></i> 코드 보기</a>
+          <a href="https://iridescent-belekoy-d4e267.netlify.app/" class="new-tab"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
+        </div>
+      </div>
+      <div class="duo">
+        <a class="app" href="https://peppy-meringue-df52e3.netlify.app/" target="_blank" title="새 탭에 열기">
+          <div class="img">
+            <img src="images/scrimba/randompw.png" alt="">
+          </div>
+          <h3>랜덤 암호 만들기</h3>
+        </a>
+        <div class="links">
+          <a href="https://github.com/code-zeen/scrimba/tree/main/random-pw-generator-app" class="github"><i
+              class="fa-brands fa-github"></i> 코드 보기</a>
+          <a href="https://peppy-meringue-df52e3.netlify.app/" class="new-tab"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
+        </div>
+      </div>
+      <div class="duo">
+        <a class="app" href="https://sage-marigold-24ca31.netlify.app/" target="_blank" title="새 탭에 열기">
+          <div class="img">
+            <img src="images/scrimba/conversion.png" alt="">
+          </div>
+          <h3>단위 변환기</h3>
+        </a>
+        <div class="links">
+          <a href="https://github.com/code-zeen/scrimba/tree/main/unit-conversion-app" class="github"><i
+              class="fa-brands fa-github"></i> 코드 보기</a>
+          <a href="https://sage-marigold-24ca31.netlify.app/" class="new-tab"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- modals -->
+  <div id="modal-backdrop">
+    <div id="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">사이트 리뉴얼: 해피피플</h3>
+        <button class="exit-btn">&times;</button>
+      </div>
+      <div id="happy-modal" class="modal-body">
+        <p>첫 웹 리뉴얼 프로젝트 주제로 개선이 필요해 보이는 NGO 단체 &lt;해피피플&gt; 을 선정하였습니다. 빼곡하고 답답한 레이아웃을 여백과 아이콘을 사용하여 좀 더 여유롭게 정보가 눈에 들어올
+          수 있도록 디자인 하였습니다.</p>
+        <h4>메인 페이지</h4>
+        <div class="before-after">
+          <div class="before">
+            <h5>리뉴얼 전: </h5>
+            <div class="img-holder">
+              <img src="/images/happy-people/original-main-page.png" alt="">
+            </div>
+          </div>
+          <div class="after">
+            <h5>리뉴얼 후: </h5>
+            <div class="img-holder">
+              <img src="/images/happy-people/renewal-main-page.png" alt="">
+            </div>
+          </div>
+        </div>
+        <h4>서브 페이지</h4>
+        <div class="before-after">
+          <div class="before">
+            <h5>리뉴얼 전: </h5>
+            <div class="img-holder">
+              <img src="/images/happy-people/original-sub-page.png" alt="">
+            </div>
+          </div>
+          <div class="after">
+            <h5>리뉴얼 후: </h5>
+            <div class="img-holder">
+              <img src="/images/happy-people/renewal-sub-page.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mosh-modal" class="modal-body">
+        <p>적응형 웹사이트인 모쉬를 flexbox와 grid를 이용해 반응형으로 리뉴얼 하였습니다.</p>
+        <h4>메인 페이지</h4>
+        <div class="before-after">
+          <div class="before">
+            <h5>리뉴얼 전: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/original-main-page.png" alt="">
+            </div>
+          </div>
+          <div class="after">
+            <h5>리뉴얼 후: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/renewal-main-page.png" alt="">
+            </div>
+          </div>
+        </div>
+        <h4>서브 페이지</h4>
+        <div class="before-after">
+          <div class="before">
+            <h5>리뉴얼 전: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/original-sub-page1.png" alt="">
+            </div>
+          </div>
+          <div class="after">
+            <h5>리뉴얼 후: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/renewal-sub-page1-lattestraw.png" alt="">
+            </div>
+          </div>
+        </div>
+        <h4>로그인 페이지</h4>
+        <div class="before-after">
+          <div class="before">
+            <h5>리뉴얼 전: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/original-sub-page2.png" alt="">
+            </div>
+          </div>
+          <div class="after">
+            <h5>리뉴얼 후: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/renewal-sub-page2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <h4>반응형 </h4>
+        <div class="responsive">
+          <div>
+            <h5>메인 페이지: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/renewal-main-page-mobile.png" alt="">
+            </div>
+          </div>
+          <div>
+            <h5>서브 페이지: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/renewal-sub-page1-mobile.png" alt="">
+            </div>
+          </div>
+          <div>
+            <h5>로그인 페이지: </h5>
+            <div class="img-holder">
+              <img src="/images/mosh/renewal-sub-page2-mobile.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="recipes-modal" class="modal-body">
+        <p>유저 컨텐츠에 의존하는 &lt;만개의 레시피&gt;를 Pinterest에서 사용되는 masonry 레이아웃을 연구하여 적용해보았습니다. 적응형인 기존 웹사이트 또한 반응형으로 리뉴얼 하였습니다.
+        </p>
+        <h4>메인 페이지</h4>
+        <div class="before-after">
+          <div class="before">
+            <h5>리뉴얼 전: </h5>
+            <div class="img-holder">
+              <img src="/images/recipes/original-main-page.png" alt="">
+            </div>
+          </div>
+          <div class="after">
+            <h5>리뉴얼 후: </h5>
+            <div class="img-holder">
+              <img src="/images/recipes/renewal-main-page.png" alt="">
+            </div>
+          </div>
+        </div>
+        <h4>반응형</h4>
+        <div class="responsive">
+          <div class="mobile">
+            <h5>모바일: </h5>
+            <div class="img-holder">
+              <img src="/images/recipes/renewal-main-page-mobile.png" alt="">
+            </div>
+          </div>
+          <div class="tablet">
+            <h5>태블릿: </h5>
+            <div class="img-holder">
+              <img src="/images/recipes/renewal-main-page-tablet.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="close-btn btn">닫기</button>
+        <a class="more-btn btn" href="#">결과물 보기 ></a>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgjrjvj"
+        method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">성함</label>
+          <input type="text" name="name" id="full-name" placeholder="홍길동" required="" tabindex="1">
+
+          <label for="email-address">메일 주소</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@mail.com" required="" tabindex="2">
+
+          <label for="message">메시지</label>
+          <textarea rows="5" name="message" id="message" placeholder="메시지 내용" required="" tabindex="3"></textarea>
+
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          <input type="submit" value="전송">
+        </fieldset>
+
+      </form>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
