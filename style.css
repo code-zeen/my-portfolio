@@ -166,6 +166,10 @@ nav a:hover {
 #skills span {
   line-height: 40px;
 }
+#skills .program.wip {
+  opacity: 0.3;
+}
+
 /* projects */
 #projects .duo {
   display: flex;
