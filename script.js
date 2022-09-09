@@ -1,7 +1,7 @@
 const body = document.querySelector("body")
 const exitBtn = document.querySelector(".exit-btn")
 const closeBtn = document.querySelector(".close-btn")
-const modalBackdrop = document.getElementById("modal-backdrop")
+const modalBackdrop = (document.getElementById("modal-backdrop"))
 const modal = document.getElementById("modal")
 const modalTitle = document.getElementById("modal-title")
 const happyModal = document.getElementById("happy-modal")
@@ -31,7 +31,7 @@ happyBtn.addEventListener("click", function() {
   happyModal.style.display = "block"
   moshModal.style.display = "none"
   recipesModal.style.display = "none"
-  moreBtn.setAttribute("href","subpages/happy-people/index.html")
+  moreBtn.href = "subpages/happy-people/index.html"
 })
 moshBtn.addEventListener("click", function() {
   activateModal()
@@ -47,9 +47,19 @@ recipesBtn.addEventListener("click", function() {
   happyModal.style.display = "none"
   moshModal.style.display = "none"
   recipesModal.style.display = "block"
-  moreBtn.href="https://google.com/"
+  moreBtn.href="subpages/recipes/index.html"
 })
 
+// specific event to override preventDefault()
+function openInNewTab(url) {
+  const win = window.open(url, '_blank');
+  win.focus();
+}
+moreBtn.addEventListener("click", function () {
+  openInNewTab(moreBtn.href)
+})
+
+// close
 function keyPress(e) {
   if (e.key === "Escape") {
     deactivateModal()
