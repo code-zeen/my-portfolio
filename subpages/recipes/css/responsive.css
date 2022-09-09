@@ -1,0 +1,124 @@
+@media (max-width: 1354px) {
+  
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
+  .wrapper .pos-rel {
+    width: 100%;
+  }
+  .wrapper .aside {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  .wrapper .aside .logo {
+    margin-top: 20px;
+  }
+  .wrapper .aside .snb {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0; padding: 0;
+  }
+  .snb li {
+    width: calc(100%/6);
+    border-bottom: none;
+  }
+  .snb li>a {
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 2px solid #eee;
+  }
+  .snb li:hover>a {
+    color: #72b042;
+    border-bottom: 4px solid #72b042;
+  }
+  .snb li>a::after {
+    display: none;
+  }
+  .snb .sub-menu a {
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    margin-left: 0;
+    padding-left: 4px;
+    padding-right: 8px;
+    background: #fff;
+  }
+
+  /* new search */
+  .aside .sort-bar {
+    display: block;
+    margin: -10px 0;
+  }
+  .aside .sort-bar .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside .search input {
+    min-width: 250px;
+    width: 96%;
+    margin: 20px 0;
+    padding: 9px 16px;
+    border-radius: 7px 0 0 7px;
+    outline: none;
+    border: 1px solid #aaa;
+  }
+  .aside .sort-bar button {
+    border-radius: 0 7px 7px 0;
+    padding:10px 16px;
+    margin-left: 0;
+  }
+
+
+  /* container */
+  .container h2 {
+    margin-left: 12px;
+  }
+  .container h2:first-child {
+    margin-top: 0;
+  }
+
+  /* swiper */
+  .swiper {
+    margin: 2%;
+  }
+  .swiper-pagination,
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  /* ads */
+  .ads {
+    margin: 0;
+  }
+  .ads a {
+    display: none;
+  }
+ 
+  /* hidden search */
+  .container .sort-bar {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .grid {
+    width: 94%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+  
+  .footer {
+    padding: 20px 10px;
+  }
+}

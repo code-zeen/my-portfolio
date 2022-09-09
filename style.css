@@ -86,7 +86,17 @@ h2::after {
   margin-top: .25em;
   background: var(--clr-accent-0);
 }
-
+section h2 {
+  margin-bottom: 1.2em;
+}
+section hr {
+  margin: 4em 0 1em;
+  width: 2em;
+  border: 1px solid var(--clr-accent-1);
+}
+section h2 + p {
+  opacity: 0.9;
+}
 /* nav */
 nav.container {
   margin-top: 0;
@@ -115,8 +125,18 @@ nav a:hover {
 }
 
 /* home */
+#home {
+  /* border: 1px solid red; */
+  padding: 10em 4em;
+}
 #home .title {
   font-weight: 300;
+}
+#home .title.first {
+  margin-bottom: 0;
+}
+#home .title.second {
+  margin-top: .5em;
 }
 #home .subtitle {
   display: block;
@@ -128,10 +148,36 @@ nav a:hover {
   font-size: var(--fs-h3);
   text-align: right;
 }
+#home strong {
+  color: var(--clr-accent-2);
+}
+#home .github {
+  color: var(--clr-accent-2);
+  font-size: var(--fs-h3);
+}
+#home .github:hover {
+  color: var(--clr-accent-3);
+}
+#home .github span {
+  font-size: var(--fs-body);
+}
+/* about */
+#about p {
+  line-height: 2.5;
+}
+#about p.history {
+  color: var(--clr-accent-4);
+  line-height: 2;
+  opacity: .5;
+}
+#about p.history .hidden {
+  visibility: hidden;
+}
 /* skills */
 #skills .programs {
   display: grid;
   padding: 4em 1em;
+  margin-top: 3em;
   grid-template-columns: 
     repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -167,7 +213,41 @@ nav a:hover {
   line-height: 40px;
 }
 #skills .program.wip {
-  opacity: 0.3;
+  background: var(--clr-card);
+  position: relative;
+}
+#skills .program.wip .icon,
+#skills .program.wip .txt {
+  opacity: 0.6;
+}
+#skills .program.wip::before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  bottom: calc(100%);
+  left: 50%;
+  background: #fff;
+  width: 16px; height: 16px;
+  border-radius: 3px;
+  transform: rotate(45deg) translateX(-50%);
+}
+#skills .program.wip::after {
+  opacity: 0;
+  content: '준비중입니다!';
+  font-size: 12px;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  background: #fff;
+  color: #1c1c1c;
+  padding: .25em .7em;
+  border-radius: .5em;
+}
+#skills .program.wip:hover::before,
+#skills .program.wip:hover::after {
+  opacity: 1;
 }
 
 /* projects */
@@ -290,7 +370,7 @@ nav a:hover {
   left: 50%;
   z-index: 2;
   transform: translateX(-50%);
-  background: #273549;
+  background: var(--clr-card);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 7px;
   box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.308);
@@ -308,14 +388,17 @@ nav a:hover {
 #modal h4 {
   font-size: 20px;
   margin-bottom: 0;
+  opacity: 1;
 }
 #modal h5 {
   color: #eee;
   font-size: 18px;
   margin: 20px 0;
+  opacity: .9;
 }
 #modal p {
   color: #e5e7eb;
+  opacity: .8;
   margin: 40px 0;
 }
 .modal-body {

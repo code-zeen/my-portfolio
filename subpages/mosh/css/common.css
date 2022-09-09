@@ -1,0 +1,406 @@
+/* 
+Montserrat 400 600
+Noto Sans KR 300 400 700
+Playfair Display 700 900 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;700&family=Playfair+Display:wght@700;900&display=swap');
+/* Waltograph */
+@import url('https://fontlibrary.org//face/waltograph');
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Reset CSS */
+body, p, ul, li, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+    font-size: 0;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Common Style */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    color: #333;
+    background: #fcf7ef; 
+}
+
+h2 {
+    color: #5b4f4f;
+}
+
+/* CONTAINER 1 (HEADER) */
+header {
+    display: flex;
+    align-items: center;
+    width: 100%; height: 100px;
+    position: fixed;
+    z-index: 10;
+    background: rgb(138, 138, 138);
+    background: linear-gradient(0deg, rgba(238,238,238,0) 0%, rgba(158, 143, 129, 0.246) 26%, rgba(104, 91, 81, 0.942) 100%);
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; height: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+header .logo {
+    height: 32px;
+}
+.hamburger-menu {
+    display: none;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li a {
+    display: block;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 0 12px;
+    padding: 4px 12px;
+    position: relative;
+}
+.gnb li a::after {
+    content: "";
+    display: block;
+    margin-top: 4px;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transition: 0.35s;
+}
+.gnb li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.my-menu {
+    display: flex;
+}
+.my-menu .hover-box {
+    position: relative;
+}
+.my-menu i {
+    color: #fff;
+    padding: 8px 16px;
+}
+.my-menu .hover-box div {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    right: 16px;
+    display: none;
+}
+.my-menu .hover-box:hover div {
+    display: block;
+}
+.my-menu .hover-box .shopping-bag h4 {
+    width: 300px;
+}
+.my-menu .hover-box .shopping-bag p {
+    display: flex;
+    justify-content: space-between;
+}
+.my-menu .hover-box .shopping-bag p:first-of-type {
+    margin: 16px 8px;
+    color: #666;
+}
+.my-menu .hover-box .shopping-bag p:last-of-type {
+    margin: -4px 8px 12px;
+}
+.my-menu .hover-box .profile {
+    text-align: center;
+}
+.my-menu .hover-box .profile>a {
+    background: #333;
+    color: #fff;
+    padding: 12px 72px;
+}
+.my-menu .hover-box .profile>a:hover {
+    background: #000;
+}
+.my-menu .hover-box .profile p {
+    width: 240px;
+    color: #666;
+    font-size: 12px;
+    margin-top: 28px;
+}
+.my-menu .hover-box .profile p>a:hover {
+    text-decoration: underline;
+}
+/* END */
+
+
+
+/* FOOTER */
+footer {
+    background: #94867b;
+    min-height: 200px;
+    height: auto;
+}
+footer .center {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+footer .responsive-duo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 30%;
+}
+footer .block {
+    color: #fff;
+}
+footer .block h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase;
+}
+footer .block p {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+footer .block.kor p,
+footer .block.kor a {
+    font-family: 'Pretendard-Light', sans-serif;
+    line-height: 1.2rem;
+}
+footer .block a {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+footer .block a:hover {
+    text-decoration: underline;
+}
+footer .block img {
+    width: 120px;
+}
+
+.copyright {
+    height: 40px; line-height: 40px;
+    background: #333;
+    color: #eee;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* TO TOP */
+.totop a {
+    display: block;
+    width: 60px; height: 60px; line-height: 60px;
+    text-align: center;
+    font-size: 22px;
+    background: #fff;
+    box-shadow: 0 4px 10px 2px rgba(51, 51, 51, 0.178);
+    border-radius: 30px;
+    position: fixed;
+    right: 40px; bottom: 60px;
+    z-index: 11;
+}
+.totop a:hover {
+    color: rgb(255, 134, 64);
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 986px) {
+    header {
+        height: 60px;
+    }
+    nav {
+        flex-direction: column;
+        position: relative;
+
+    }
+    nav .logo {
+        position: absolute;
+        left: 24px; top: 10px;
+    }
+    .gnb {
+        flex-direction: column;
+        width: 30%; height: 100vh;
+        min-width: 256px;
+        background: rgba(255, 255, 255, 0.85);
+        position: absolute;
+        right: 0;
+        padding-top: 100px;
+    }
+    .gnb li {
+        width: 100%;
+    }
+    .gnb li a {
+        color: #5b4f4f;
+        padding: 12px 24px;
+        margin: 0;
+    }
+    .gnb li a::after {
+        content: none;
+    }
+    .gnb li a:hover {
+        background: rgb(255, 134, 64);
+        color: #eee;
+    }
+    .my-menu {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        min-width: 256px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+   
+    .my-menu .hover-box {
+        flex: 1 auto;
+        text-align: center;
+        border-right: 1px solid #5b4f4f;
+    }
+    .my-menu a {
+        display: inline-block;
+        width: 100%; height: 100%;
+    }
+    .my-menu .hover-box:last-of-type {
+        border-right: none;
+    }
+    .my-menu i {
+        color: #5b4f4f;
+    }
+    .my-menu .hover-box a:hover i {
+        color: rgb(255, 134, 64);
+    }
+
+
+    /* show & hide gnb, my-menu */
+    .gnb,
+    .my-menu {
+        display: none !important;
+    }
+    .gnb.on,
+    .my-menu.on {
+        display: flex !important;
+    }
+    .my-menu .hover-box:hover div {
+        display: none;
+    }
+
+    /* trigger */
+    .hamburger-menu {
+        display: block;
+        width: 28px; height: 20px;
+        position: absolute;
+        top: 16px; right: 16px;
+        cursor: pointer;
+    }
+    .hamburger-menu span {
+        width: 28px; height: 3px;
+        border-radius: 3px;
+        background: #fff;
+        position: absolute;
+        transition: 0.35s;
+    }
+    .hamburger-menu span:nth-of-type(1) {
+        top: 0;
+    }
+    .hamburger-menu span:nth-of-type(2) {
+        width: 22px;
+        top: 50%; right: 0;
+        transform: translateY(-50%);
+    }
+    .hamburger-menu span:nth-of-type(3) {
+        bottom: 0;
+    }
+
+    /* close */
+   .hamburger-menu.active span:nth-child(1) {
+       top: 50%;
+       transform: rotate(45deg) translateY(-50%);
+       background-color: #5b4f4f;
+   }
+   .hamburger-menu.active span:nth-child(2) {
+       right: -100%;
+       opacity: 0;
+   }
+   .hamburger-menu.active span:nth-child(3) {
+       bottom: 50%;
+       transform: rotate(-45deg) translateY(50%);
+       background: #5b4f4f;
+   }
+
+
+   /* footer */
+   footer .center {
+       flex-direction: column;
+       align-items: center;
+   }
+   footer .responsive-duo {
+       width: 100%;
+       max-width: 480px;
+       margin-top: 40px;
+   }
+   footer .block {
+       width: 220px;
+   }
+}

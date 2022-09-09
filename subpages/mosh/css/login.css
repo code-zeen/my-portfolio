@@ -1,0 +1,233 @@
+@import url(http://db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+
+body {
+    height: auto;
+}
+label,
+.other>a {
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    font-weight: 700;
+    color: #5b4f4f;
+}
+
+.bg-img {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* display: block; */
+    background-image: url(../images/mosh-product-display.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; height: 120%;
+    transform: translateY(-60px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+.login {
+    height: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+.login-box {
+    display: flex;
+    max-width: 900px; 
+    height: fit-content; 
+    min-height: 480px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 100px 10px #9e9b95be;
+    border-radius: 23px;
+}
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; min-height: 100%;
+    border-radius: 0 23px 23px 0;
+}
+.right {
+    background: #5b4f4f;
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 20px;
+    max-width: 400px;
+    width: 100%; height: fit-content;
+}
+h2 {
+    padding: 32px 0 40px;
+}
+.inner > div {
+    width: 100%;
+}
+.label-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+input {
+    border: 1px solid #94867b;
+    border-radius: 30px;
+    padding: 18px 24px;
+    box-sizing: border-box;
+    outline: none;
+}
+.other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.other a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-grp label {
+    cursor: pointer;
+}
+.checkbox-grp input {
+    display: none;
+}
+.checkbox-grp span {
+    display: inline-block;
+}
+.checkbox-grp .icon {
+    position: relative;
+    width: 15px; height: 15px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    transform: translateY(3px);
+    transition: background 0.1s ease;
+}
+.checkbox-grp .icon::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    width: 5px; height: 11px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg) scale(0);
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+    opacity: 0;
+}
+.checkbox-grp .text {
+    margin-left: 8px;
+}
+.checkbox-grp input:checked ~ .icon {
+    border-color: transparent;
+    transform: translateY(3px);
+    background: #5b4f4f;
+    animation: jelly 0.6s ease;
+}
+.checkbox-grp input:checked ~ .icon::after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+
+@keyframes jelly {
+    from {
+        transform: scale(1, 1) translateY(3px);
+    }
+    30% {
+        transform: scale(1.25, 0.75) translateY(3px);
+    }
+    40% {
+        transform: scale(0.75, 1.25) translateY(3px);
+    }
+    50% {
+        transform: scale(1.15, 0.85) translateY(3px);
+    }
+    65% {
+        transform: scale(0.95, 1.05) translateY(3px);
+    }
+    75% {
+        transform: scale(1.05, 0.95) translateY(3px);
+    }
+    to {
+        transform: scale(1, 1) translateY(3px);
+    }
+}   
+
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+}
+.login-btn a {
+    padding: 18px 24px;
+    border-radius: 30px;
+    background: #94867b;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.login-btn a:hover {
+    background: #5b4f4f;
+}
+.divider-or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+.divider-or .line {
+    width: 90%; height: 1px;
+    background: #94867b;
+}
+.divider-or .or {
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #94867b;
+}
+
+.alt-login a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 52px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.kakao a {
+    background: #fee500;
+    color: #000;
+}
+.facebook a {
+    background: #4267b2;
+}
+.naver a{
+    background: #4fa42b;
+}
+.alt-login img {
+    height: 24px; width: auto;
+    position: absolute;
+    left: 20px;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.signup a {
+    font-size: 14px;
+    color: #fff;
+}
+.signup a:hover {
+    text-decoration: underline; 
+}

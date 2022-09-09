@@ -10,7 +10,7 @@ const recipesModal = document.getElementById("recipes-modal")
 const happyBtn = document.getElementById("happy-btn")
 const moshBtn = document.getElementById("mosh-btn")
 const recipesBtn = document.getElementById("recipes-btn")
-
+const moreBtn = document.querySelector(".more-btn")
 
 exitBtn.addEventListener("click", deactivateModal)
 closeBtn.addEventListener("click", deactivateModal)
@@ -31,6 +31,7 @@ happyBtn.addEventListener("click", function() {
   happyModal.style.display = "block"
   moshModal.style.display = "none"
   recipesModal.style.display = "none"
+  moreBtn.setAttribute("href","subpages/happy-people/index.html")
 })
 moshBtn.addEventListener("click", function() {
   activateModal()
@@ -38,6 +39,7 @@ moshBtn.addEventListener("click", function() {
   happyModal.style.display = "none"
   moshModal.style.display = "block"
   recipesModal.style.display = "none"
+  moreBtn.href="subpages/mosh/index.html"
 })
 recipesBtn.addEventListener("click", function() {
   activateModal()
@@ -45,6 +47,7 @@ recipesBtn.addEventListener("click", function() {
   happyModal.style.display = "none"
   moshModal.style.display = "none"
   recipesModal.style.display = "block"
+  moreBtn.href="https://google.com/"
 })
 
 function keyPress(e) {

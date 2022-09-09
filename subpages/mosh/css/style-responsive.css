@@ -1,0 +1,68 @@
+@media (max-width: 986px) {
+    .intro {
+        flex-direction: column;
+    }
+    .intro .block-img {
+        order: 2;
+    }
+    .intro .block-txt-btn {
+        order: 1;
+        text-align: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+    .intro .block-txt-btn p {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
+
+    .btn-shop-now {
+        width: 92%;
+        max-width: 480px;
+        /* height: 48px; line-height: 48px; */
+    }
+
+
+
+    .sub-slide h2 {
+        font-size: 28px;
+    }
+    .sub-slide p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .disney .inner {
+        height: 50%;
+    }
+    .disney .collab-logo {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .disney .collab-logo span.waltograph {
+        margin-top: -20px;
+    }
+
+    .lookbook img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .electronics .img-box {
+        flex-direction: column;
+        width: 90%;
+    }
+    .electronics .img-box a {
+        width: 100%;
+    }
+    .electronics .img-box .txt-bg-box {
+        align-self: initial;
+        width: 100%; max-width: 100%;
+        height: 200px;
+        padding: 20px 32px 40px;
+        text-align: center;
+    }
+}

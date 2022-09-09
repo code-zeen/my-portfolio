@@ -1,0 +1,181 @@
+@charset "utf-8";
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat&display=swap');
+@font-face {
+  font-family: 'Pretendard-Thin';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HaenamFont';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/HaenamFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HSYuji-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.top-banner {
+    width: 100%; height: 300px;
+    overflow: hidden;
+    filter: brightness(70%);
+}
+.top-banner img {
+    transform: translateY(-35%);
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.title {
+    margin-top: 30px;
+    position: relative;
+}
+.title .breadcrumb {
+    margin-top: 28px; /* margin-left: 10px;*/
+    font-size: 13px;
+}
+.title .breadcrumb li {
+    display: inline-block;
+}
+
+.title .breadcrumb li::after {
+    content: " >";
+    color: #aaa;
+}
+/* .title .breadcrumb li:first-of-type::before {
+    content: "";
+    display: inline-block;
+    width: 3px; height: 20px;
+    background-color: #ee8100;
+    transform: translateY(5px);
+    font-weight: bold;
+    margin-right: 5px;
+} */
+.title .breadcrumb li:last-of-type::after {
+    content: "";
+}
+.title .breadcrumb li a {
+    color: #aaa;
+    padding: 6px 8px;
+}
+.title .breadcrumb li a:hover {
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+.title .breadcrumb li:last-of-type a {
+    font-weight: bold;
+    color: rgb(110, 110, 110);
+}
+.title .breadcrumb li:last-of-type a:hover {
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+hr {
+    width: 500px;
+    border: 2px solid #fdcd0a;
+    position: absolute;
+    margin-top: 12px;
+}
+
+
+/* content */
+.content {
+    margin-top: 100px;
+}
+.content .row {
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .block {
+    width: 24%;
+    margin-bottom: 20px;
+}
+/* image */
+.content .row .crop {
+    width: 100%; height: 190px;
+    overflow: hidden;
+}
+.content .row .block img {
+    height: 100%;
+}
+/* text */
+.content .row .block .text {
+    height: 240px;
+    padding: 28px 16px;
+    background-color: #eee;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+    position: relative;
+}
+.content .row .block .text h3 {
+    font-size: 20px;
+}
+.content .row .block .text p {
+    margin-top: 20px; padding: 2px;
+    font-size: 14px;
+    line-height: 1.8em;
+    /* text wrap */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content .row .block .text span {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+}
+.content .row .block:hover .text {
+    background-color: #fff;
+    border: 2px solid #eee;
+}
+.content .row .block:hover .text span,
+.content .row .block:hover .text h3 {
+    color: cornflowerblue;
+}
+.content .row .block:hover img {
+    filter: brightness(1.05);
+}
+
+/* nav */
+.nav {
+    text-align: center;
+    margin-top: 40px;
+}
+.nav a {
+    padding: 8px 12px;
+}
+.nav a:hover {
+    color: cornflowerblue;
+}
+.nav a:nth-child(3){
+    background-color: #ddd;
+    color: #333;
+    cursor: default;
+}
+
+/* footer */
+footer {
+    margin-top: 200px;
+}
